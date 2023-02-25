@@ -1,0 +1,51 @@
+:root {
+    --white: #ffffff;
+    --primary-color: #10375c;
+    --secondary-color: #2e80ce;
+    --text-color: #575f66;
+    --text-hero-color: #c9d2da;
+    --link-color: #2e80ce;
+    --link-footer-color: #a9b3bb;
+    --primary-bg-color: #f7fbff;
+    --card-bg-color: #eaf6ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+
+/* ========== Common  ==========*/
+.heading-lv1 {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.heading-lv2 {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
