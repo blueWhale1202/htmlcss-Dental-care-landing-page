@@ -8,6 +8,8 @@
     --link-footer-color: #a9b3bb;
     --primary-bg-color: #f7fbff;
     --card-bg-color: #eaf6ff;
+
+    --font-primary: "Sora", sans-serif;
 }
 
 * {
@@ -20,10 +22,15 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Sora", sans-serif;
+    font-family: var(--font-primary);
 }
 
 /* ========== Common  ==========*/
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 .heading-lv1 {
     font-weight: 600;
     font-size: 7rem;
@@ -48,4 +55,95 @@ body {
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.75;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 20px;
+    min-width: 205px;
+    height: 60px;
+    background: var(--link-color);
+    border: none;
+    border-radius: 9999px;
+    outline: none;
+
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+/* ========== Header  ========== */
+.header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: -22px;
+    background-color: var(--primary-color);
+}
+
+.header__content {
+    padding: 30px 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    display: block;
+    padding: 12px 21px;
+    color: var(--text-hero-color);
+}
+
+.header__link--active {
+    position: relative;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.header__link.active::before {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.btn-cta {
+    min-width: 104px;
+    height: 44px;
+
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.btn-cta + .btn-cta {
+    margin-left: 8px;
+}
+
+.btn-cta--active {
+    font-weight: 300;
+    color: var(--text-hero-color);
+    background: transparent;
 }
