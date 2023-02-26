@@ -30,6 +30,12 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 3);
@@ -42,6 +48,7 @@ a {
     font-size: 7rem;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    color: var(--white);
 }
 
 .heading-lv2 {
@@ -56,12 +63,14 @@ a {
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.67;
+    color: var(--text-color);
 }
 
 .sub-title {
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.75;
+    color: var(--primary-color);
 }
 
 .content {
@@ -88,6 +97,10 @@ a {
     color: var(--white);
 
     cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
 }
 
 /* ========== Header  ========== */
@@ -363,6 +376,7 @@ a {
 }
 
 .guide__link {
+    color: var(--text-color);
     margin-top: 18px;
 }
 
@@ -423,4 +437,103 @@ a {
 
 .about__btn {
     margin-top: 38px;
+}
+
+/* ========== Team  ========== */
+.team {
+    padding: 85px 0;
+}
+
+.team__content {
+    overflow-x: hidden;
+}
+
+.team__heading {
+    text-align: center;
+}
+
+.team__btn {
+    margin-top: 38px;
+}
+
+.team__list {
+    --num-item: 4;
+    --gap: 30px;
+    --width-item: calc(((100% + var(--gap)) / var(--num-item)) - var(--gap));
+
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+}
+
+.team__member {
+    flex-shrink: 0;
+    width: var(--width-item);
+    height: 384px;
+    border-radius: 6px;
+    background: var(--white);
+}
+
+.team__member:hover {
+    box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
+}
+
+.team__thumb {
+    height: 83%;
+    background: var(--card-bg-color);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.team__thumb img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team__member__info {
+    padding: 12px 0px;
+    text-align: center;
+}
+
+.team__member__name a {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--primary-color);
+}
+
+.team__member__level {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: var(--text-color);
+}
+
+.team__cta {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.team__btn-action {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-color);
+}
+
+.team__btn-action:hover {
+    background: var(--secondary-color);
+    border: none;
+}
+
+.team__btn-action:hover path {
+    stroke: var(--white);
 }
