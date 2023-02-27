@@ -681,3 +681,36 @@ button {
 .blog__link:hover {
     color: var(--secondary-color);
 }
+
+/* ========== Header  ========== */
+.contact {
+    margin: 85px 0;
+}
+
+.contact__content {
+    padding: 100px 0;
+    background: var(--primary-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 38px;
+}
+
+.contact__desc {
+    position: relative;
+    width: 617px;
+}
+
+.contact__desc::before {
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    transform: translateX(-50%);
+
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: var(--secondary-color);
+}
