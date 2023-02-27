@@ -464,6 +464,7 @@ button {
     margin-top: 70px;
     display: flex;
     gap: 30px;
+    transition: transform 0.3s ease-in;
 }
 
 .team__member {
@@ -536,4 +537,55 @@ button {
 
 .team__btn-action:hover path {
     stroke: var(--white);
+}
+
+/* ========== CTA  ========== */
+.cta {
+    margin: 265px 0 85px;
+}
+
+.cta__content {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 70px;
+    height: 427px;
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.cta__img {
+    position: absolute;
+    left: 70px;
+    top: -95px;
+
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.cta__info {
+    margin-left: auto;
+    width: 586px;
+}
+
+.cta__heading,
+.cta__desc {
+    color: var(--white);
+}
+
+.cta__desc {
+    margin-top: 18px;
+}
+
+.cta__btn {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
+
+.cta__link-app {
+    height: 40px;
 }
